@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("bg.webp");
+  background-size: 150px; /* Use cover for better scaling */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 10px;
+  width: 80vw; /* Make it responsive */
+  max-width: 336px; /* Maximum width */
+  height: auto;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+}
+
+.tile.matched {
+  border: 2px solid rgb(92, 220, 0);
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.tile {
+  position: relative;
+  width: 80px;
+  height: 116px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  background-image: url("logo.png");
+  background-size: 100%; /* Reduce the size of logo.png */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tile img {
+  width: 100%;
+  height: 100%;
+  display: none;
+  border-radius: 15%;
+}
+
+.tile.flipped {
+  background-image: none; /* Remove the back */
+}
+
+.tile.flipped img {
+  display: block; /* Show the card image */
+}
+
+.timer {
+  margin-bottom: 500px;
+  font-size: 14px;
+  color: #fff; /* Couleur du texte pour une meilleure visibilité */
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour une meilleure lisibilité */
+  padding: 10px;
+  border-radius: 40px;
+}
