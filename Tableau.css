@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #fff;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 5rem 1rem;
+    background: linear-gradient(135deg, #86a8e7, #91eae4);
+}
+
+.portfolio, .about, .contact {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.project {
+    margin: 1rem 0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 1rem;
+}
